@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="main.css" />
+    <title>PokeDex</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body class="body">
+    <div class="container">
+      <header>
+        <h1>PokeDex</h1>
+        <button onclick="refreshPage()">🔃 Random Pokemon</button>
+      </header>
+
+      <div class="wrapper">
+        <div class="row">
+          <div class="col-img">
+            <div id="sprite-img"></div>
+          </div>
+        </div>
+        <div class="row">
+          <p id="name"></p>
+          <div class="col-info">
+            <table>
+              <tbody>
+                <tr>
+                  <td>
+                    <b>Height</b>
+                    <table>
+                      <tbody>
+                        <tr>
+                          <td><p id="height"></p></td>
+                        </tr>
+                      </tbody>
+                    </table>
+                    <b>Weight</b>
+                    <table>
+                      <tbody>
+                        <tr>
+                          <td><p id="weight"></p></td>
+                        </tr>
+                      </tbody>
+                    </table>
+                    <b>Type(s)</b>
+                    <table>
+                      <tbody>
+                        <td><p class="p" id="ul-2"></p></td>
+                      </tbody>
+                    </table>
+                  </td>
+                  <td></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="app.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
